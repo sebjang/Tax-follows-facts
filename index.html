@@ -2,7 +2,7 @@
 @page{size:A4 portrait;margin:0}
 html,body{margin:0;padding:0}
 *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-@media screen{body{background:#dde1dc;padding:18px 0;gap:18px;min-height:100vh}#cov,#rd{box-shadow:0 6px 26px rgba(0,0,0,.18);background:#fff}}
+@media screen{body{background:#dde1dc;padding:18px 0;gap:18px;min-height:100vh;overflow-x:hidden}#cov,#rd{box-shadow:0 6px 26px rgba(0,0,0,.18);background:#fff}}
 body{display:flex;flex-direction:column;align-items:center}
 #cov,#rd{width:210mm;box-sizing:border-box;position:relative}
 #rd{page-break-before:always;padding-top:7mm;font-family:"Noto Sans KR","Malgun Gothic",sans-serif}
@@ -101,6 +101,7 @@ body{display:flex;flex-direction:column;align-items:center}
 #rd .slogan b{color:#fff;border-bottom:1.6px solid #ffd24a}
 #rd .slogan .hot{color:#ffd24a;font-weight:800}
 #rd .pat .disc{margin-top:4px;font-size:6.6pt;color:#666;line-height:1.32;border-top:.6px solid #ddd;padding-top:3px}
+@media print{#cov,#rd{zoom:1!important}}
 </style>
 <div id="cov">
 <div class="page">
@@ -211,4 +212,5 @@ body{display:flex;flex-direction:column;align-items:center}
 <div style="margin-top:3px"><b>■ 증빙·약어 (해설)</b> &nbsp; <span class=s>DVCA</span> 우선배당 현금분배 명세 · <span class=s>KSD</span> 한국예탁결제원 · <span class=s>QI</span> 적격중개인 · <span class=s>E&P</span> 이익잉여금 · <span class=s>8937</span> 美 기초가액영향 기업행위보고서 · <span class=s>ICI</span> 발행사 소득성격(1차) · <span class=s>19a-1</span> 美 분배원천 통지 · <span class=s>1042-S</span> 美 외국인 원천징수명세 · <span class=s>Income Code 37</span> 자본반환(ROC) · <span class=s>면제·세율</span> Income Code·면제코드·세율 종합 · <span class=s>BTE</span> 취득가 소진법 · <span class=s>KRW</span> 원화 · <span class=s>USD</span> 미국달러 · <span class=s>BU_FX</span> 취득환율(매수일 KRW/USD) · <span class=s>TD_FX</span> 지급환율(지급일 KRW/USD)</div></div>
 <div class=pat><div class=patid>국제조세 사실판단 근거 데이터 분석 &nbsp;|&nbsp; (주)인흥 &nbsp;|&nbsp; 구미시 1공단로 212, 816호 &nbsp;|&nbsp; sebjang@gmail.com &nbsp;|&nbsp; 010-7753-1240</div><div class=pathd>특허 출원</div><div class=prow><span class=pn>① 10-2026-0079638</span> 해외 ETF 분배금 세원 교차검증 방법 및 시스템</div><div class=prow><span class=pn>② 10-2026-0084940</span> QI 재분류 기준 해외납세내역서 복원·검증 방법 및 시스템</div><div class=prow><span class=pn>③ 10-2026-0084983</span> 국제원천징수 재분류 이벤트의 불변원장 복원 및 이중 정합성 검증 시스템</div><div class=prow><span class=pn>④ 10-2026-0109157</span> 자산연속성 검증 및 국제 세무원장 정합복원 기반 불변 증거원장 생성 시스템 및 방법</div></div>
 </div></div>
+<script>(function(){function fit(){var vw=document.documentElement.clientWidth||window.innerWidth;var z=Math.min(1,(vw-8)/794);var e=document.querySelectorAll("#cov,#rd");for(var i=0;i<e.length;i++){e[i].style.zoom=z;}}window.addEventListener("load",fit);window.addEventListener("resize",fit);window.addEventListener("orientationchange",fit);fit();})();</script>
 </html>
