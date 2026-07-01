@@ -1,0 +1,4 @@
+*.bak
+_chrome_*/
+Thumbs.db
+.DS_Store
